@@ -1,0 +1,18 @@
+{config, lib, ...}: {
+    config = {
+        var = {
+            name = "Ankit Prajapati";
+            username = "ankit";
+            gitEmail = "77499177+ankit792r@users.noreply.github.com";
+            nixosVersion = "25.05";
+            homeManagerVersion = "25.05";
+        };
+    };
+
+    options = {
+        var = lib.mkOption {
+            type = lib.types.attrs;
+            default = {};
+        };
+    };
+}

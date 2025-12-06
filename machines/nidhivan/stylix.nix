@@ -1,0 +1,32 @@
+{ pkgs, ... }: {
+    stylix.cursor = {
+        package = pkgs.bibata-cursors;
+        name = "Bibata-Modern-Ice";
+    };
+
+    stylix.fonts = {
+        monospace = {
+            package = pkgs.nerd-fonts.jetbrains-mono;
+            name = "JetBrainsMono Nerd Font Mono";
+        };
+        sansSerif = {
+            package = pkgs.noto-fonts;
+            name = "Noto Sans";
+        };
+        serif = {
+            package = pkgs.noto-fonts;
+            name = "Noto Serif";
+        };
+        sizes = {
+            applications = 12;
+            terminal = 14;
+            desktop = 12;
+            popups = 12;
+        };
+    };
+
+    stylix.targets = {
+        gtk.enable = true;
+        qt.enable = true;
+    };
+}
