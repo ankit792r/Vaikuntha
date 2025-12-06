@@ -1,5 +1,5 @@
 {
-  description = "Vrindavan - The city of Radha and Krishna";
+  description = "Nidhivan - The city of Radha and Krishna";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
@@ -15,7 +15,7 @@
   };
 
   outputs = { nixpkgs, ... }@inputs: {
-    nixosConfigurations.vrindavan = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nidhivan = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
