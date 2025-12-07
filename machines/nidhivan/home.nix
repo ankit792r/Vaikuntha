@@ -10,17 +10,20 @@
     home.homeDirectory = "/home/${var.username}";
     home.stateVersion = var.homeManagerVersion;
 
+    home.sessionPath = [ "$HOME/Vaikuntha/scripts/bin" ];
+
     home.packages = with pkgs; [
         xwayland-satellite
         hyprpolkitagent
         mako
         fuzzel
         waybar
-        alacritty
+        kitty
         swww
         swaybg
         swaylock
         imagemagick
+        waypaper
 
         grim
         slurp
