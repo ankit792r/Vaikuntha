@@ -14,5 +14,5 @@
     package = pkgs.nix;
   };
 
-  system.stateVersion = "25.05";
+  system.stateVersion = config.var.nixosVersion;
 }
