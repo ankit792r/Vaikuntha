@@ -1,8 +1,9 @@
 { pkgs, ... }: {
+    stylix.enable = true;
     stylix.autoEnable = true;
     # Base16 color scheme - you can change this to any base16 theme
     # Popular options: "gruvbox-dark-hard", "nord", "dracula", "tokyo-night-dark", "catppuccin-mocha"
-    stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
 
     stylix.cursor = {
         package = pkgs.bibata-cursors;
@@ -12,7 +13,6 @@
 
     stylix.fonts = {
         monospace = {
-            package = pkgs.nerd-fonts.jetbrains-mono;
             name = "JetBrainsMono Nerd Font Mono";
         };
         sansSerif = {

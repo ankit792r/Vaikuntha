@@ -7,6 +7,8 @@
     tree
     wget
     curl
+    zip
+    unzip
     git
 
     vim

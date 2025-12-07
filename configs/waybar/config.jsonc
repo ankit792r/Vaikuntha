@@ -2,25 +2,22 @@
   "layer":"top",
   "position": "bottom",
   "height": 28,
-  "modules-left": ["clock", "niri/window"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": [],
   "modules-right": [
     "pulseaudio",
+    "backlight",
     "network",
     "cpu",
     "memory",
     "temperature",
     "battery",
-    "tray",
+    "clock",
+    "tray"
   ],
 
-
-  "temperature": {
-    "format": "TEMP {temperatureC}°C",
-    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    "critical-threshold": 80
-  },
   "clock": {
+    "timezone": "Asia/Kolkata",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
   },
@@ -33,6 +30,11 @@
   "memory": {
     "format": "MEM {used:0.1f}G/{total:0.1f}G"
   },
+
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "TEMP {temperatureC}°C"
+   },
 
   "battery": {
     "states": {
@@ -61,11 +63,13 @@
     "format-muted": "MUTED",
     "format-source": "{volume}%",
     "format-source-muted": "MUTED",
-    "format-icons": {
-      "default": ["", "", ""]
-    },
     "on-click": "pavucontrol"
   },
+
+  "backlight": {
+    "format": "{percent}% {icon}"
+  },
+
   "tray": {
       "icon-size": 18,
       "spacing": 5

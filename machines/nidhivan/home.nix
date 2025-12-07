@@ -12,6 +12,7 @@
 
     home.packages = with pkgs; [
         xwayland-satellite
+        hyprpolkitagent
         mako
         fuzzel
         waybar
@@ -29,6 +30,7 @@
         wf-recorder
         satty
 
+        nemo
         powertop
         acpi
         wayland-utils

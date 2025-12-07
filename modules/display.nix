@@ -23,6 +23,5 @@
         };
     };
 
-    # Disable X server - using pure Wayland with niri
     services.xserver.enable = false;
 }
