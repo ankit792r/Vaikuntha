@@ -7,7 +7,6 @@
             settings = {
                 General = {
                     Relogin = false;
-                    defaultSession = "niri.desktop";
                     EnableAvatars = false;
                 };
                 Theme = {

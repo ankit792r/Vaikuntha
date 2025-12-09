@@ -13,6 +13,7 @@
         ../../packages/system.nix
         ../../variables.nix
         ../../modules/sessions/hypr.nix
+        ../../modules/sessions/niri.nix
     ];
 
     networking.hostName = "Nidhivan";

@@ -19,5 +19,7 @@
     yarn
     prettierd
     eslint_d
+    vscode
+    code-cursor
   ];
 }
