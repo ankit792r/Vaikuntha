@@ -2,7 +2,7 @@
   networking.networkmanager.enable = true;
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ ];
+    allowedTCPPorts = [ 4096 ];
     allowedUDPPorts = [ ];
   };
 }

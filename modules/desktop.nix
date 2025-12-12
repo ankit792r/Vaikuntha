@@ -51,7 +51,7 @@
 				serif = [ "Source Serif Pro" "Noto Serif" "DejaVu Serif" ];
 				
 				# Use JetBrains Mono as default monospace (better than SpaceMono for general use)
-				monospace = [ "JetBrains Mono" "SpaceMono Nerd Font" "DejaVu Sans Mono" ];
+				monospace = [ "JetBrains Mono Nerd" "SpaceMono Nerd Font" "DejaVu Sans Mono" ];
 				
 				# Emoji support
 				emoji = [ "Noto Color Emoji" ];

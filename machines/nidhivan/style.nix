@@ -4,10 +4,12 @@
     # Base16 color scheme - you can change this to any base16 theme
     # Popular options: "gruvbox-dark-hard", "nord", "dracula", "tokyo-night-dark", "catppuccin-mocha"
     stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+    stylix.polarity = "dark";
+    stylix.image = ../../images/devote/04.jpg;
 
     stylix.cursor = {
-        package = pkgs.bibata-cursors;
-        name = "Bibata-Modern-Ice";
+        package = pkgs.vimix-cursors;
+        name = "Vimix-Cursors";
         size = 24;
     };
 

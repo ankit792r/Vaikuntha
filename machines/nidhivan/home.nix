@@ -5,7 +5,6 @@
         ../../packages/office.nix
     ];
 
-    programs.firefox.enable = true;
     home.username = var.username;
     home.homeDirectory = "/home/${var.username}";
     home.stateVersion = var.homeManagerVersion;
@@ -16,14 +15,19 @@
         xwayland-satellite
         hyprpolkitagent
         mako
+
+        rofi
         fuzzel
+
         waybar
+        alacritty
         kitty
         swww
         swaybg
-        swaylock
+        swaylock-effects
         imagemagick
         waypaper
+        wlogout
 
         grim
         slurp
@@ -33,11 +37,11 @@
         wf-recorder
         satty
 
-        nemo
+        xfce.thunar
         powertop
         acpi
         wayland-utils
-    
+
         fastfetch
         zathura
         neovim

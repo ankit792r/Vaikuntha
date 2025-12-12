@@ -1,10 +1,10 @@
 { config, lib, pkgs, var, ... }: {
-    home.packages = with pkgs; [     
+    home.packages = with pkgs; [
         rustc
         cargo
         rustfmt
         clippy
-        rust-analyzer   
+        rust-analyzer
 
         docker
         docker-compose
@@ -15,18 +15,12 @@
         userName = var.name;
         userEmail = var.gitEmail;
 
-        extraConfig = {            
+        extraConfig = {
             init.defaultBranch = "main";
             pull.rebase = true;
             push.autoSetupRemote = true;
-            core.editor = "nvim";
-            diff.tool = "vimdiff";
-            merge.tool = "vimdiff";
-            
+            core.editor = "vim";
             credential.helper = "store";
-            
-            diff.algorithm = "patience";
-            merge.conflictstyle = "diff3";
             alias = {
                 hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
             };

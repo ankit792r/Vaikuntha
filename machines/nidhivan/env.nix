@@ -1,13 +1,12 @@
 { config, lib, pkgs, ... }: {
   home.sessionVariables = {
     # Cursor theme
-    XCURSOR_THEME = "vimix-cursors";
     XCURSOR_SIZE = "28";
     
     # Core environment
     EDITOR = "nvim";
     BROWSER = "firefox";
-    TERMINAL = "kitty";
+    TERMINAL = "alacritty";
     
     # Terminal and color support
     TERM = "xterm-256color";

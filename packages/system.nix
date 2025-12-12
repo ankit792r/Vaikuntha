@@ -1,6 +1,11 @@
-{ pkgs, ... }:  {
+{ pkgs, var, ... }:  {
   nixpkgs.config.allowUnfree = true;
+
+  programs.bash.enable = true;
+  programs.firefox.enable = true;
+
   environment.systemPackages = with pkgs; [
+    bash
     gcc
     cmake
     which
@@ -10,6 +15,7 @@
     zip
     unzip
     git
+    openssl
 
     vim
     fzf
@@ -23,5 +29,14 @@
     pciutils
     lshw
     drm_info
+
+    # multimedia related pkgs
+    feh
+    mpv
+    vlc
+    ffmpeg
+    v4l-utils
+    cheese
+    libcamera
   ];
 }
