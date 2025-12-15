@@ -8,8 +8,8 @@
     stylix.image = ../../images/devote/04.jpg;
 
     stylix.cursor = {
-        package = pkgs.vimix-cursors;
-        name = "Vimix-Cursors";
+        package = pkgs.capitaine-cursors;
+        name = "capitaine-cursors";
         size = 24;
     };
 
