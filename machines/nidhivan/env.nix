@@ -1,12 +1,12 @@
 { config, lib, pkgs, ... }: {
-  home.sessionVariables = {
-    # Cursor theme
-    XCURSOR_SIZE = "28";
-    
+  environment.sessionVariables = {
     # Core environment
     EDITOR = "nvim";
     BROWSER = "firefox";
     TERMINAL = "alacritty";
+
+    PATH = "$HOME/Vaikuntha/scripts/bin";
+    ELECTRON_OZONE_PLATFORM_HINT = "auto";
     
     # Terminal and color support
     TERM = "xterm-256color";

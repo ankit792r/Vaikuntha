@@ -2,7 +2,7 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnsupportedSystem = true;
 
-  home.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     docker
     docker-compose
     lazydocker

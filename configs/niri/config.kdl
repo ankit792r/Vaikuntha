@@ -59,6 +59,7 @@ layout {
 
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
+spawn-at-startup "hyprpolkitagent"
 spawn-sh-at-startup "swaybg -i ~/Vaikuntha/images/devote/04.jpg -m fill"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"

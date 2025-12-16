@@ -5,17 +5,11 @@
         ../../packages/office.nix
     ];
 
-    home.username = var.username;
-    home.homeDirectory = "/home/${var.username}";
-    home.stateVersion = var.homeManagerVersion;
-
-    home.sessionPath = [ "$HOME/Vaikuntha/scripts/bin" ];
-
-    home.packages = with pkgs; [
+    environment.systemPackages = with pkgs; [
+        home-manager
         xwayland-satellite
         hyprpolkitagent
         mako
-
         rofi
         fuzzel
 
@@ -25,7 +19,6 @@
         swww
         swaybg
         swaylock-effects
-        imagemagick
         waypaper
         wlogout
 
@@ -33,6 +26,7 @@
         slurp
         pavucontrol
         brightnessctl
+        wlsunset
         wl-clipboard
         wf-recorder
         satty
@@ -43,12 +37,7 @@
         wayland-utils
 
         fastfetch
-        zathura
         neovim
         tmux
     ];
-
-    # home.file = {
-    #     ".config/alacritty".source = ../../configs/alacritty;
-    # };
 }

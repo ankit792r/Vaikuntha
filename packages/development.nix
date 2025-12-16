@@ -1,5 +1,5 @@
 { config, lib, pkgs, var, ... }: {
-    home.packages = with pkgs; [
+    environment.systemPackages = with pkgs; [
         rustc
         cargo
         rustfmt
@@ -12,18 +12,18 @@
 
     programs.git = {
         enable = true;
-        userName = var.name;
-        userEmail = var.gitEmail;
+        # user.name = config.var.name;
+        # user.email = config.var.gitEmail;
 
-        extraConfig = {
-            init.defaultBranch = "main";
-            pull.rebase = true;
-            push.autoSetupRemote = true;
-            core.editor = "vim";
-            credential.helper = "store";
-            alias = {
-                hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
-            };
-        };
+        # extraConfig = {
+        #     init.defaultBranch = "main";
+        #     pull.rebase = true;
+        #     push.autoSetupRemote = true;
+        #     core.editor = "vim";
+        #     credential.helper = "store";
+        #     alias = {
+        #         hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
+        #     };
+        # };
     };
 }

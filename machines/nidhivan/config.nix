@@ -1,6 +1,5 @@
-{ config, pkgs, inputs, ... }:  {
+{ config, pkgs, inputs, var, ... }:  {
     imports = [
-        ./hardware-configuration.nix
         ../../modules/nix-conf.nix
         ../../modules/boot.nix
         ../../modules/network.nix
@@ -10,20 +9,14 @@
         ../../modules/security.nix
         ../../modules/users.nix
         ../../packages/system.nix
-        ../../variables.nix
         ../../modules/sessions/hypr.nix
         ../../modules/sessions/niri.nix
+        ./hardware-configuration.nix
+        ../../variables.nix
         ./style.nix
+        ./home.nix
     ];
 
     networking.hostName = "Nidhivan";
-    home-manager = {
-        useUserPackages = true;
-        users."${config.var.username}" = import ./home.nix;
-        extraSpecialArgs = { 
-            inherit inputs;
-            var = config.var;
-        };
-    };
     system.stateVersion = config.var.nixosVersion;
 }

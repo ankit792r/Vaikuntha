@@ -21,6 +21,11 @@
     fzf
     ripgrep
     ranger
+    ueberzugpp
+    mpv
+    imagemagick
+    ffmpegthumbnailer
+    bat
     lazygit
     htop
     iputils
@@ -31,7 +36,7 @@
     drm_info
 
     # multimedia related pkgs
-    feh
+    swayimg
     mpv
     vlc
     ffmpeg
